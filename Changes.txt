@@ -1,0 +1,24 @@
+index.html (Home Page):
+Increase the size of the main heading
+Change the layout of the tasks to a two-column grid
+Make the scrollable content area wider
+Update the "Next Page" button to go to Page 3
+
+
+These changes include:
+Increased the size of the main heading.
+Changed the layout of the tasks to display side by side instead of vertically.
+Made the slider vertical instead of horizontal.
+Increased the size of the dropdown list.
+Moved the "Go to Next Page" button to the right side of the page.
+
+Page 3 
+These changes include:
+Increased the size of the main heading.
+Changed the layout of the tasks to display side by side instead of vertically.
+Increased the size of the checkboxes.
+Moved the "Complete All Tasks" button to the right side of the page.
+Here are the three main changes made to the layout:
+Changed the layout to a two-column design using flexbox. This affects the orientation of the tasks, placing them side by side instead of vertically.
+Increased the size of the main heading (h1) to make it more prominent.
+Changed the slider orientation from horizontal to vertical and adjusted its size.

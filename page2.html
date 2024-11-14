@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 - My Multi-Page Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Change 1: Increase the size of the main heading */
+        h1 { font-size: 2.5em; }
+        
+        /* Change 2: Make the tasks display side by side */
+        .task-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .task {
+            width: 45%;
+        }
+        
+        /* Change 3: Make the slider vertical */
+        #slider {
+            -webkit-appearance: slider-vertical;
+            width: 30px;
+            height: 200px;
+        }
+        
+        /* Change 4: Increase the size of the dropdown */
+        #itemList {
+            font-size: 1.2em;
+            padding: 10px;
+        }
+        
+        /* Change 5: Move the "Go to Next Page" button to the right */
+        #nextPageBtn {
+            float: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Page 2</h1>
+        <img src="image2.jpg" alt="Page 2 Image">
+        <p>Complete the tasks below to unlock the next page:</p>
+        
+        <div class="task-container">
+            <div class="task">
+                <h2>Task 1: Slide the Range</h2>
+                <input type="range" id="slider" min="0" max="100" value="0">
+                <p>Value: <span id="sliderValue">0</span></p>
+            </div>
+
+            <div class="task">
+                <h2>Task 2: Select from List</h2>
+                <select id="itemList">
+                    <option value="">Choose an item</option>
+                    <option value="item1">Item 1</option>
+                    <option value="item2">Item 2</option>
+                    <option value="item3">Item 3</option>
+                    <option value="item4">Item 4</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="taskStatus"></div>
+
+        <button id="completeBtn" class="next-page-button" style="display: none;">Complete All Tasks</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

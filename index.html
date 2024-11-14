@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Multi-Page Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 { font-size: 2.5em; }
+        .task-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .scrollable-content { 
+            width: 80%; 
+            height: 150px; 
+            overflow-y: auto; 
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome to My Website</h1>
+        <img src="image1.jpg" alt="Welcome Image">
+        <p>Complete the tasks below to unlock the next page:</p>
+        
+        <div class="task-grid">
+            <div class="task">
+                <h2>Task 1: Change Background Color</h2>
+                <select id="colorSelector">
+                    <option value="default">Select a color</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+                <button id="changeColorBtn">Change Background</button>
+            </div>
+
+            <div class="task">
+                <h2>Task 2: Enter Your Name</h2>
+                <input type="text" id="nameInput" placeholder="Enter your name">
+                <button id="submitNameBtn">Submit Name</button>
+            </div>
+
+            <div class="task">
+                <h2>Task 3: Select Your Favorite</h2>
+                <div>
+                    <input type="radio" id="option1" name="favorite" value="option1">
+                    <label for="option1">Option 1</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="favorite" value="option2">
+                    <label for="option2">Option 2</label>
+                </div>
+                <div>
+                    <input type="radio" id="option3" name="favorite" value="option3">
+                    <label for="option3">Option 3</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="scrollable-content">
+            <h2>Scrollable Content</h2>
+            <p>This is a scrollable area. You can add more content here to make it scroll.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div id="taskStatus"></div>
+
+        <button id="nextPageBtn" class="next-page-button" style="display: none;">Go to Page 3</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

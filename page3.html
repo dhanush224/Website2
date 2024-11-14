@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3 - My Multi-Page Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Change 1: Make the layout two-column */
+        .task-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .task {
+            width: 45%;
+        }
+        
+        /* Change 2: Increase the size of the main heading */
+        h1 {
+            font-size: 2.5em;
+        }
+        
+        /* Change 3: Make the slider vertical */
+        #slider {
+            -webkit-appearance: slider-vertical;
+            width: 30px;
+            height: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Page 3</h1>
+        <img src="image3.jpg" alt="Page 3 Image">
+        <p>Complete the tasks below:</p>
+        
+        <div class="task-container">
+            <!-- Change: Swapped the order of tasks -->
+            <div class="task">
+                <h2>Task 1: Slide the Range</h2>
+                <input type="range" id="slider" min="0" max="100" value="0">
+                <p>Value: <span id="sliderValue">0</span></p>
+            </div>
+
+            <div class="task">
+                <h2>Task 2: Check the Boxes</h2>
+                <div>
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1">Option 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">Option 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3">Option 3</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="taskStatus"></div>
+
+        <button id="nextPageBtn" class="next-page-button" style="display: none;">Go to Page 2</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
